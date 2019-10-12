@@ -1,2 +1,7 @@
-Patch from Sakaki
+Apply Patch from Sakaki
 https://github.com/sakaki-/genpi64-overlay/blob/master/dev-embedded/wiringpi/
+
+1. cd wiringPi/PATCH
+2. patch ../wiringPi/wiringPi.c aarch64_by_sakaki.patch
+3. cd.. && ./build
+4. mkdir /etc/wiringpi && cp PATCH/etc/wiringpi/cpuinfo /etc/wiringpi/
